@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!----encabezado-->
+    <div class="container">
+        <form id="paymentForm">
+            <div class="card text-left">
+                <div class="card-header">
+                    <h1> Payment Form Example</h1>
+
+                    <!----segundo cuadro-->
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12  text-left">
+                            <div class="alert alert-danger">
+                                Some field are missing
+                            </div>
+                        </div>
+                    </div>
+                    <!----las tres primeras colunnas -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="validationCustom01" class="form-label">Card #</label>
+                            <input class="form-control" name="card" id="card" placeholder="XXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom01" class="form-label">Cvc #</label>
+                            <input class="form-control" name="cvc" id="cvc" placeholder="0000000000000">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Amount #</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" name="amount" id="amount"
+                                    aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                    </div>
+                    <!----dos colunnas-->
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input class="form-control" name="firstname" id="firsttname">
+                        </div>
+                        <div class="col-6">
+                            <label for="validationCustom01" class="form-label">Last name</label>
+                            <input class="form-control" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <!----2 de tres colunas -->
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="inputCity" for="validationCustom01">City</label>
+                            <input class="form-control" name="city" id="city">
+                        </div>
+                        <div class="col-3">
+                            <label for="inputState" for="validationCustom01">State</label>
+                            <select id="inputState" class="form-select" name="state" id="state">
+                                <option selected>Pick state</option>
+                                <option>hola</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="inputZip" for="validationCustom01">postal code </label>
+                            <input class="form-control" name="postalcode" id="postalcode">
+                        </div>
+                    </div>
+                    <!---colunas card-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <P>We accept:</P>
+                            <div class="d-inline p-2 bg-dark text-white">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fab fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fab fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3" >
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-amex"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3" >
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="validationTextarea" class="form-label">Menssage</label>
+                            <textarea class="form-control" name="menssage" id="menssage!"
+                                placeholder="Required example textarea "  rows="4"></textarea>
+                                <label for="exampleDataList" class="form-label">Add any notes here.</label>
+                        </div>
+
+                    </div>
+                    <!---botones-->
+                </div>
+
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-secondary mx-1" type="reset">Cancel</button>
+                    <button class="btn btn-primary mx-1" type="submit">Send</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
